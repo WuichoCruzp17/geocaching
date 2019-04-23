@@ -17,12 +17,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 export const firebbaseConfig ={
-  apiKey: "AIzaSyBhIMNLGuvxaC36tbeIrfONrRkrpnxbrDE",
-    authDomain: "ionicplatzy-4eecf.firebaseapp.com",
-    databaseURL: "https://ionicplatzy-4eecf.firebaseio.com",
-    projectId: "ionicplatzy-4eecf",
-    storageBucket: "ionicplatzy-4eecf.appspot.com",
-    messagingSenderId: "226801944554"
+
 }
 
 @NgModule({
