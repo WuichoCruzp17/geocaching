@@ -7,8 +7,31 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <ion-list>
+          <ion-item-sliding *ngFor="let lugar of lugares" (click)="irAVistaDetalleExistente()">
+              <ion-item href="#">
+                <ion-label>
+                  <h2>{{lugar.nombre}}</h2>
+                  <p>{{lugar.direccion}}</p>
+                  <p>{{lugar.categoria}}</p>
+                </ion-label>
+                <ion-note slot="end">
+                  10:45 AM
+                </ion-note>
+              </ion-item>
+              <ion-item-options side="end">
+                <ion-item-option color="danger">
+                  <ion-icon slot="icon-only" name="trash"></ion-icon>
+                </ion-item-option>
+              </ion-item-options>
+            </ion-item-sliding>
+      </ion-list>
+      <ion-fab  vertical="bottom" horizontal="end">
+          <ion-fab-button (click)="irAVistaDetalle()">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
 </ion-content>
+<ion-footer>
+  <p>Soy un footer</p>
+</ion-footer>
